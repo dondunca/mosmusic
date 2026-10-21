@@ -4,8 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>M.O.S</title>
-<meta name="description" content="M.O.S is a DJ and producer from Brussels. Deep house with R&B warmth and Eastern lines. Listen, see shows, download the press kit, book him.">
+<meta name="description" content="M.O.S is a Brussels after-dark selector and producer. Eclectic house, emotional edits and high-energy closing sets. Listen, see shows, download the press kit, book him.">
 <link rel="canonical" href="https://mosmusic.be/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+<link rel="apple-touch-icon" href="favicon-512.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="M.O.S">
 <meta property="og:description" content="DJ and producer, Brussels. Deep house with R&B warmth and Eastern lines.">
@@ -13,7 +16,7 @@
 <meta property="og:image" content="https://mosmusic.be/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MusicGroup","name":"M.O.S","alternateName":"Michael Oulbaz Suarez","genre":["Deep House","Electronic"],"foundingLocation":{"@type":"City","name":"Brussels"},"email":"booking.mosmusic@gmail.com","url":"https://mosmusic.be/","sameAs":["https://soundcloud.com/moskitoss","https://www.instagram.com/m.o.s_music/","https://www.facebook.com/MOSMUZIK"]}
+{"@context":"https://schema.org","@type":"MusicGroup","name":"M.O.S","alternateName":"Michael Oulbaz Suarez","genre":["House","Electronic"],"foundingLocation":{"@type":"City","name":"Brussels"},"email":"booking.mosmusic@gmail.com","url":"https://mosmusic.be/","sameAs":["https://soundcloud.com/moskitoss","https://www.instagram.com/m.o.s_music/","https://www.facebook.com/MOSMUZIK"]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,13 +69,21 @@ header nav a.book{color:var(--rose)}
 @keyframes rise{to{transform:translateY(0)}}
 @media (prefers-reduced-motion: reduce){.load .hero-type .row{animation:none;transform:none}}
 
-/* photo bands */
-.band{position:relative;overflow:hidden}
-.band img{width:100%;height:min(86vh,760px);object-fit:cover;filter:contrast(1.05) saturate(1.08)}
-.band figcaption{position:absolute;bottom:0;left:0;background:var(--paper);color:var(--ink);padding:10px 16px;font-size:.85rem;border-top:2px solid var(--ink);border-right:2px solid var(--ink)}
-.band.reveal img{clip-path:inset(0 0 100% 0);transition:clip-path 1s cubic-bezier(.2,.7,.2,1)}
-.band.reveal.in img{clip-path:inset(0 0 0 0)}
-@media (prefers-reduced-motion: reduce){.band.reveal img{clip-path:none;transition:none}}
+/* editorial features: portrait photography shown at native sharpness, never stretched */
+.feature{padding:84px 20px;border-bottom:2px solid var(--ink)}
+.feature-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:minmax(0,33rem) minmax(0,1fr);gap:48px;align-items:center}
+.feature-grid.flip{grid-template-columns:minmax(0,1fr) minmax(0,33rem)}
+.ffig{position:relative;border:2px solid var(--ink);justify-self:center;width:100%;max-width:33rem}
+.ffig img{width:100%;height:auto;filter:contrast(1.04) saturate(1.06)}
+.ffig figcaption{position:absolute;bottom:0;left:0;background:var(--paper);color:var(--ink);padding:9px 14px;font-size:.84rem;border-top:2px solid var(--ink);border-right:2px solid var(--ink)}
+.fwords{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:clamp(2.6rem,7.5vw,6.4rem);line-height:.98;user-select:none}
+.fwords span{display:block}
+.fwords .o{color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+.fwords .r{color:var(--rose)}
+.fwords small{display:block;font-family:'Familjen Grotesk',sans-serif;font-size:1.05rem;text-transform:none;letter-spacing:0;line-height:1.5;max-width:34ch;margin-top:22px;color:var(--ink)}
+.ffig.reveal img{clip-path:inset(0 0 100% 0);transition:clip-path 1s cubic-bezier(.2,.7,.2,1)}
+.ffig.reveal.in img{clip-path:inset(0 0 0 0)}
+@media (prefers-reduced-motion: reduce){.ffig.reveal img{clip-path:none;transition:none}}
 
 /* marquee */
 .ticker{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);overflow:hidden;white-space:nowrap;background:var(--paper)}
@@ -175,7 +186,9 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
 @media (max-width:840px){
   header nav{gap:14px}
   .hero{padding-top:84px}
-  .hero-under,.shows-cols,.about-grid,.booking-grid,.epk-flex{grid-template-columns:1fr}
+  .hero-under,.shows-cols,.about-grid,.booking-grid,.epk-flex,.feature-grid,.feature-grid.flip{grid-template-columns:1fr}
+  .feature{padding:64px 16px}
+  .feature-grid.flip .fwords{order:2}
   .hero-cta{justify-content:flex-start}
   .players{grid-template-columns:1fr}
   .rooms-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -205,11 +218,11 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
 <div class="hero">
   <div class="hero-type" aria-label="M.O.S, deep house from Brussels">
     <span class="row">M.O.S</span>
-    <span class="row outline long">deep house</span>
+    <span class="row outline long">after dark</span>
     <span class="row long">Bruxelles<em>.</em></span>
   </div>
   <div class="hero-under">
-    <p>DJ and producer. R&amp;B warmth and Eastern lines folded into deep, physical house, on vinyl, machines and CDJs. <b>Michael Oulbaz Suarez</b> plays rooms, not playlists.</p>
+    <p>Brussels after-dark selector. Eclectic house, emotional edits and high-energy closing sets, on vinyl, machines and CDJs. <b>Michael Oulbaz Suarez</b> plays rooms, not playlists.</p>
     <div class="hero-cta">
       <a class="btn" href="#music" data-event="listen_cta_click">Listen</a>
       <a class="btn fill" href="#booking" data-event="booking_cta_click">Book M.O.S</a>
@@ -217,15 +230,23 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
   </div>
 </div>
 
-<figure class="band reveal">
-  <img src="hero-forest.jpg" alt="M.O.S playing an open-air forest stage" fetchpriority="high">
-  <figcaption>Open air, summer 2026</figcaption>
-</figure>
+<div class="feature">
+  <div class="feature-grid">
+    <figure class="ffig reveal">
+      <img src="hero-forest.jpg" alt="M.O.S playing an open-air forest stage" fetchpriority="high">
+      <figcaption>Open air, summer 2026</figcaption>
+    </figure>
+    <div class="fwords" aria-label="Music, emotion, love, energy">
+      <span>Music</span><span class="o">Emotion</span><span>Love</span><span class="r">Energy<span style="color:var(--ink)">.</span></span>
+      <small>Four words he has lived by since the first record. The sets move between darkness and warmth, intensity and softness, always bass first.</small>
+    </div>
+  </div>
+</div>
 
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span>Amour Seum</span><span><em>Gemmayzeh remix, Monkey Parade Records</em></span><span>Cataclysme 2.0</span><span><em>Kiosk Radio, Brussels</em></span><span>Automatic Sex</span><span><em>Vinyl &amp; machines</em></span>
-    <span>Amour Seum</span><span><em>Gemmayzeh remix, Monkey Parade Records</em></span><span>Cataclysme 2.0</span><span><em>Kiosk Radio, Brussels</em></span><span>Automatic Sex</span><span><em>Vinyl &amp; machines</em></span>
+    <span>Music</span><span><em>Emotion</em></span><span>Love</span><span><em>Energy</em></span><span>Amour Seum</span><span><em>Monkey Parade Records</em></span><span>Kiosk Radio, Brussels</span><span><em>Vinyl &amp; machines</em></span>
+    <span>Music</span><span><em>Emotion</em></span><span>Love</span><span><em>Energy</em></span><span>Amour Seum</span><span><em>Monkey Parade Records</em></span><span>Kiosk Radio, Brussels</span><span><em>Vinyl &amp; machines</em></span>
   </div>
 </div>
 
@@ -297,10 +318,18 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
   </div>
 </section>
 
-<figure class="band reveal">
-  <img src="cdj-screen.jpg" alt="CDJ screens mid-set" loading="lazy">
-  <figcaption>Track 363 of the night</figcaption>
-</figure>
+<div class="feature">
+  <div class="feature-grid flip">
+    <div class="fwords">
+      <span class="o">Darkness</span><span>&amp; warmth<span class="r">.</span></span>
+      <small>Pronounced bass, warm sensual textures, atmospheric passages. Track 363 of the night and the floor is still growing.</small>
+    </div>
+    <figure class="ffig reveal">
+      <img src="cdj-screen.jpg" alt="CDJ screens mid-set" loading="lazy">
+      <figcaption>Track 363 of the night</figcaption>
+    </figure>
+  </div>
+</div>
 
 <section id="shows">
   <div class="wrap">
@@ -335,7 +364,7 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
       <p class="kicker" style="color:inherit;opacity:.7">Michael Oulbaz Suarez</p>
       <h2>About <em>M.O.S</em></h2>
       <p class="lead">M.O.S builds sets the way he collects records: slowly, by ear, keeping only what moves a room.</p>
-      <p id="shortbio">Born of African roots and based in Brussels, M.O.S folds R&amp;B warmth and Eastern lines into deep, physical house. Vinyl and hardware sit beside the digital rig; tradition and modernity are mixed in the same channel. His sets are patient and hypnotic, built to read the floor rather than fight it, from club rooms to open-air stages and the Kiosk Radio booth.</p>
+      <p id="shortbio">Born of African roots and based in Brussels, M.O.S folds R&amp;B warmth and Eastern lines into eclectic, bass-forward house. Vinyl and hardware sit beside the digital rig; tradition and modernity are mixed in the same channel. His sets are patient and sensual before they are loud, built to read the floor rather than fight it, from club rooms to open-air stages and the Kiosk Radio booth.</p>
       <div class="fullbio" id="fullbio" hidden>
         <p>The name belongs to Michael Oulbaz Suarez, a selector who came to production through years of listening: analog records, East African and Eastern tonalities, the R&amp;B he grew up on, and the deep end of house music. That mix gives his sets their signature, seductive rhythms under hypnotic patience, groove before spectacle.</p>
         <p>On record, the Lui &amp; M.O.S remix of Attari's "Gemmayzeh" came out on Monkey Parade Records, and 2026 brought a self-released run, Amour Seum, Cataclysme 2.0 and Automatic Sex. On stage he moves between vinyl, hardware and CDJs, from Brussels club rooms and the Kiosk Radio booth to beach bars, forest stages and the desert floor.</p>
@@ -355,9 +384,12 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
     <div>
       <p class="kicker">For promoters, agents, labels and press</p>
       <h2>Press <em>kit</em></h2>
-      <p>Bios in English and French, downloadable photography, music, performance history and booking contacts, on one page built to be forwarded.</p>
-      <a class="btn fill" href="epk.html" data-event="epk_open">Open the press kit</a>
-      <a class="btn" href="https://drive.google.com/drive/folders/1FTJ8PdyVIKS67OQCLuSHoGMmum1upTD6" data-event="epk_download" style="margin-left:10px">Media pack</a>
+      <p>A designed 4-page PDF, a press pack with photos in two sizes, logos and copy-ready bios, and the full online EPK. Built to be forwarded to an agent without apology.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn fill" href="MOS-press-kit.pdf" download data-event="epk_pdf_download">Press kit (PDF)</a>
+        <a class="btn" href="MOS-press-pack.zip" download data-event="epk_pack_download">Press pack (ZIP)</a>
+        <a class="btn" href="epk.html" data-event="epk_open">Online EPK</a>
+      </div>
     </div>
     <div class="epk-mini" aria-hidden="true">
       <img src="portrait-fur.jpg" alt="" loading="lazy">
@@ -423,9 +455,9 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
     var io = new IntersectionObserver(function(es){
       es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
     }, {threshold:.25});
-    document.querySelectorAll('.band.reveal').forEach(function(b){ io.observe(b); });
+    document.querySelectorAll('.ffig.reveal').forEach(function(b){ io.observe(b); });
   } else {
-    document.querySelectorAll('.band.reveal').forEach(function(b){ b.classList.add('in'); });
+    document.querySelectorAll('.ffig.reveal').forEach(function(b){ b.classList.add('in'); });
   }
 
   var up = document.getElementById('upcoming');
