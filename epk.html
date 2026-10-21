@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M.O.S — Press Kit</title>
+<meta name="description" content="Electronic press kit for M.O.S, DJ and producer from Brussels: bios in English and French, photos, music, performance history and booking contact.">
+<link rel="canonical" href="https://mosmusic.be/epk.html">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="M.O.S — Press Kit">
+<meta property="og:description" content="Bios, photos, music, performance history and booking contact for M.O.S, Brussels.">
+<meta property="og:url" content="https://mosmusic.be/epk.html">
+<meta property="og:image" content="https://mosmusic.be/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2EDE4;
+  --ink:#171310;
+  --rose:#E04E8F;
+  --smoke:#7E776C;
+  --line:#CFC8BB;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'Familjen Grotesk',sans-serif;font-size:17px;line-height:1.55}
+img{display:block;max-width:100%}
+a{color:inherit}
+::selection{background:var(--rose);color:var(--paper)}
+
+header{display:flex;justify-content:space-between;align-items:baseline;gap:18px;flex-wrap:wrap;padding:16px 20px;border-bottom:2px solid var(--ink)}
+header .mark{font-family:'Anton',sans-serif;font-size:1.15rem;text-decoration:none}
+header .mark span{color:var(--rose)}
+header nav{display:flex;gap:20px;flex-wrap:wrap}
+header nav a{text-decoration:none;font-size:.95rem;font-weight:500}
+header nav a:hover,header nav a:focus-visible{color:var(--rose)}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+h1{font-family:'Anton',sans-serif;font-size:clamp(3rem,10vw,7rem);text-transform:uppercase;line-height:.9}
+h1 em{font-style:normal;color:var(--rose)}
+h2{font-family:'Anton',sans-serif;font-size:clamp(1.7rem,4.6vw,2.8rem);text-transform:uppercase;line-height:.95;margin-bottom:28px}
+h2 em{font-style:normal;color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+.kicker{font-size:.95rem;color:var(--smoke);margin-bottom:10px}
+.btn{display:inline-block;padding:13px 22px;border:2px solid var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;background:transparent;transition:background .15s,color .15s;cursor:pointer}
+.btn:hover,.btn:focus-visible{background:var(--ink);color:var(--paper)}
+.btn.fill{background:var(--ink);color:var(--paper)}
+.btn.fill:hover,.btn.fill:focus-visible{background:var(--rose);border-color:var(--rose)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--rose);outline-offset:2px}
+
+/* masthead */
+.masthead{padding:56px 0 40px;border-bottom:2px solid var(--ink)}
+.mast-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:end}
+.mast-grid p.tag{font-size:1.15rem;max-width:40ch;margin-top:18px}
+.mast-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.mast-photo{border:2px solid var(--ink)}
+.mast-photo img{width:100%;max-height:420px;object-fit:cover;object-position:top}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:2px solid var(--ink);margin-top:0}
+.fact{padding:20px;border-right:1px solid var(--line)}
+.fact:last-child{border-right:0}
+.fact .k{font-size:.82rem;color:var(--smoke);margin-bottom:4px}
+.fact .v{font-weight:600;font-size:1.02rem;overflow-wrap:anywhere}
+td,.bio-col p{overflow-wrap:anywhere}
+
+/* bios */
+.bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.bio-col h3{font-family:'Anton',sans-serif;font-size:1.15rem;text-transform:uppercase;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:14px}
+.bio-col p{margin-bottom:1em;max-width:58ch}
+.bio-col .count{font-size:.82rem;color:var(--smoke)}
+.copybtn{background:none;border:2px solid var(--ink);padding:8px 14px;font:inherit;font-size:.88rem;font-weight:600;cursor:pointer;margin-top:4px}
+.copybtn:hover,.copybtn:focus-visible{background:var(--ink);color:var(--paper)}
+
+/* listen */
+.players{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.embed{border:2px solid var(--ink);background:#fff}
+.embed iframe{display:block;width:100%;border:0}
+.embed .label{display:flex;justify-content:space-between;gap:10px;padding:10px 14px;font-size:.88rem;border-top:2px solid var(--ink)}
+.embed .label a{font-weight:600}
+.video{grid-column:1/-1}
+
+/* discography table */
+table{width:100%;border-collapse:collapse;border:2px solid var(--ink)}
+th{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:.95rem;text-align:left;padding:12px 14px;border-bottom:2px solid var(--ink)}
+td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td a{color:var(--rose);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.tablewrap{overflow-x:auto}
+
+/* photos */
+.photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.shot{border:2px solid var(--ink);position:relative}
+.shot img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.shot .dl{position:absolute;right:0;bottom:0;background:var(--paper);border-top:2px solid var(--ink);border-left:2px solid var(--ink);padding:6px 10px;font-size:.82rem;font-weight:600;text-decoration:none}
+.shot .dl:hover,.shot .dl:focus-visible{background:var(--rose);color:var(--paper)}
+.photo-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.note{margin-top:12px;font-size:.88rem;color:var(--smoke)}
+
+/* history + tech */
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.hitem{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.hitem .d{font-family:'Anton',sans-serif}
+.hitem .v b{font-weight:600}
+.hitem .v span{display:block;color:var(--smoke);font-size:.92rem}
+ul.tech{list-style:none}
+ul.tech li{padding:12px 0;border-bottom:1px solid var(--line)}
+ul.tech li b{font-weight:600}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);margin-top:40px}
+.contact .wrap{padding-top:64px;padding-bottom:64px}
+.contact h2 em{-webkit-text-stroke-color:var(--paper)}
+.contact .mail{font-family:'Anton',sans-serif;font-size:clamp(1.4rem,4.5vw,3rem);color:var(--rose);text-decoration:none;word-break:break-all}
+.contact .mail:hover,.contact .mail:focus-visible{text-decoration:underline;text-underline-offset:5px}
+.contact .links{margin-top:22px;display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}
+.contact .links a{color:var(--paper)}
+.contact .links a:hover{color:var(--rose)}
+.contact p.small{margin-top:18px;font-size:.88rem;opacity:.7}
+
+footer{padding:26px 20px;font-size:.88rem;color:var(--smoke);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{color:var(--smoke)}
+
+@media (max-width:840px){
+  .mast-grid,.bio-grid,.players,.twocol{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr 1fr}
+  .fact:nth-child(2){border-right:0}
+  .fact{border-bottom:1px solid var(--line)}
+  .fact:nth-last-child(-n+2){border-bottom:0}
+  .photo-grid{grid-template-columns:1fr 1fr}
+  section{padding:48px 0}
+}
+
+/* print = the downloadable EPK */
+@media print{
+  header nav,.mast-actions,.copybtn,.photo-actions,.players,.shot .dl,footer .no-print{display:none !important}
+  body{font-size:12px}
+  .masthead{padding:10px 0}
+  section{padding:18px 0;break-inside:avoid}
+  .contact{background:none;color:var(--ink);border-top:2px solid var(--ink)}
+  .contact .mail{color:var(--ink)}
+  a{text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="mark" href="index.html">M<span>.</span>O<span>.</span>S</a>
+  <nav>
+    <a href="index.html">Site</a>
+    <a href="#bios">Bios</a>
+    <a href="#listen">Listen</a>
+    <a href="#photos">Photos</a>
+    <a href="#history">History</a>
+    <a href="#contact" style="color:var(--rose)">Booking</a>
+  </nav>
+</header>
+
+<div class="masthead">
+  <div class="wrap mast-grid">
+    <div>
+      <p class="kicker">Electronic press kit, updated October 2026</p>
+      <h1>M.O.S <em>press kit</em></h1>
+      <p class="tag">Everything a promoter, agent, label or journalist needs on one page: bios, photography, music, history and contact.</p>
+      <div class="mast-actions">
+        <button class="btn fill" onclick="window.print()" data-event="epk_print">Save as PDF</button>
+        <a class="btn" href="https://drive.google.com/drive/folders/1FTJ8PdyVIKS67OQCLuSHoGMmum1upTD6" data-event="epk_download">Full media pack</a>
+        <a class="btn" href="mailto:booking.mosmusic@gmail.com?subject=Booking%20request%20%E2%80%94%20M.O.S" data-event="booking_email_click">Book M.O.S</a>
+      </div>
+    </div>
+    <figure class="mast-photo">
+      <img src="portrait-fur.jpg" alt="M.O.S, Brussels" fetchpriority="high">
+    </figure>
+  </div>
+</div>
+
+<div class="wrap" style="margin-top:40px">
+  <div class="facts">
+    <div class="fact"><div class="k">Artist</div><div class="v">M.O.S<br>(Michael Oulbaz Suarez)</div></div>
+    <div class="fact"><div class="k">Base</div><div class="v">Brussels, Belgium<br>plays across Europe</div></div>
+    <div class="fact"><div class="k">Sound</div><div class="v">Deep house, electronic, R&amp;B and Eastern lines</div></div>
+    <div class="fact"><div class="k">Booking</div><div class="v">booking.mosmusic@gmail.com</div></div>
+  </div>
+</div>
+
+<section id="bios">
+  <div class="wrap">
+    <p class="kicker">Copy-ready, in two lengths and two languages</p>
+    <h2>Bios<em>.</em></h2>
+    <div class="bio-grid">
+      <div class="bio-col">
+        <h3>Short, English <span class="count">(~70 words)</span></h3>
+        <div id="bio-short-en">
+          <p>M.O.S is the alias of Michael Oulbaz Suarez, a DJ and producer based in Brussels. Born of African roots, he folds R&amp;B warmth and Eastern lines into deep, physical house, mixing vinyl, hardware and CDJs in the same channel. His remix of Attari's "Gemmayzeh" (with Lui) appeared on Monkey Parade Records; his sets run from Brussels club rooms and Kiosk Radio to forest stages and beach floors.</p>
+        </div>
+        <button class="copybtn" data-copy="bio-short-en" data-event="bio_copy">Copy text</button>
+      </div>
+      <div class="bio-col">
+        <h3>Short, Français <span class="count">(~70 mots)</span></h3>
+        <div id="bio-short-fr">
+          <p>M.O.S, alias de Michael Oulbaz Suarez, est DJ et producteur basé à Bruxelles. De racines africaines, il glisse la chaleur du R&amp;B et des lignes orientales dans une deep house physique, mêlant vinyles, machines et CDJs dans le même canal. Son remix de « Gemmayzeh » d'Attari (avec Lui) est sorti sur Monkey Parade Records ; ses sets vont des clubs bruxellois et de Kiosk Radio aux scènes en forêt et aux plages.</p>
+        </div>
+        <button class="copybtn" data-copy="bio-short-fr" data-event="bio_copy">Copier le texte</button>
+      </div>
+      <div class="bio-col">
+        <h3>Full, English <span class="count">(~250 words)</span></h3>
+        <div id="bio-full-en">
+          <p>M.O.S is the project of Michael Oulbaz Suarez, a selector who came to production through years of listening: analog records, East African and Eastern tonalities, the R&amp;B he grew up on, and the deep end of house music. That blend gives his sets their signature, seductive rhythms under hypnotic patience, groove placed before spectacle.</p>
+          <p>Based in Brussels, he moves between vinyl, hardware and CDJs, treating tradition and technology as parts of one instrument. On record, his remix of Attari's "Gemmayzeh", made with Lui, was released on Monkey Parade Records, and 2026 brought a run of self-released tracks: Amour Seum, Cataclysme 2.0 and Automatic Sex. The same year he appeared on Kiosk Radio, broadcasting from the kiosk in Brussels park.</p>
+          <p>On stage, the range is the point. M.O.S has played red-lit festival floors, packed club rooms, beach bars under the palms, private parties and the open desert, reading each floor rather than fighting it, and adjusting the bag accordingly.</p>
+          <p>Three new productions are currently in the works, sample-driven and machine-built. Behind them sits a longer plan: a label and a party series of his own, assembled the way he builds a set, piece by piece, keeping only what earns its place. For bookings and press, management responds within 48 hours.</p>
+        </div>
+        <button class="copybtn" data-copy="bio-full-en" data-event="bio_copy">Copy text</button>
+      </div>
+      <div class="bio-col">
+        <h3>Technical notes</h3>
+        <ul class="tech">
+          <li><b>Setups</b><br>CDJ sets, vinyl sets, and hybrid setups with hardware; adapts to the booth.</li>
+          <li><b>Set lengths</b><br>From 1-hour festival slots to all-night club sets.</li>
+          <li><b>Formats</b><br>Club nights, festivals, radio and streams, private events.</li>
+          <li><b>Riders</b><br>Technical and hospitality riders available on request.</li>
+          <li><b>Travel</b><br>Based in Brussels; travels from BRU.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="listen" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Hear him before you write or book</p>
+    <h2>Listen<em>.</em></h2>
+    <div class="players">
+      <div class="embed video">
+        <iframe title="M.O.S live on Kiosk Radio, Brussels" loading="lazy" height="420" src="https://www.youtube-nocookie.com/embed/ggF-aYwcUM4" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="label"><span>Kiosk Radio, Brussels, full set</span><a href="https://youtu.be/ggF-aYwcUM4" data-event="youtube_click">YouTube</a></div>
+      </div>
+      <div class="embed">
+        <iframe title="AMOUR SEUM on SoundCloud" loading="lazy" height="166" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/moskitoss/amour-seum&color=%23e04e8f&auto_play=false&show_user=true"></iframe>
+        <div class="label"><span>Latest release</span><a href="https://soundcloud.com/moskitoss/amour-seum" data-event="soundcloud_click">Amour Seum</a></div>
+      </div>
+      <div class="embed">
+        <iframe title="Gemmayzeh (Lui and M.O.S remix) on SoundCloud" loading="lazy" height="166" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/attari-sc/gemmayzeh-lui-m-o-s-remix&color=%23e04e8f&auto_play=false&show_user=true"></iframe>
+        <div class="label"><span>On Monkey Parade Records</span><a href="https://soundcloud.com/attari-sc/gemmayzeh-lui-m-o-s-remix" data-event="soundcloud_click">Gemmayzeh remix</a></div>
+      </div>
+    </div>
+    <div class="tablewrap" style="margin-top:36px">
+      <table>
+        <thead><tr><th>Release</th><th>Role</th><th>Label / year</th><th>Link</th></tr></thead>
+        <tbody>
+          <tr><td>Amour Seum</td><td>Original</td><td>Self-released, 2026</td><td><a href="https://soundcloud.com/moskitoss/amour-seum" data-event="soundcloud_click">SoundCloud</a></td></tr>
+          <tr><td>Gemmayzeh (Lui &amp; M.O.S remix)</td><td>Remix of Attari</td><td>Monkey Parade Records</td><td><a href="https://soundcloud.com/attari-sc/gemmayzeh-lui-m-o-s-remix" data-event="soundcloud_click">SoundCloud</a></td></tr>
+          <tr><td>Cataclysme 2.0</td><td>Original</td><td>Self-released, 2026</td><td><a href="https://soundcloud.com/moskitoss" data-event="soundcloud_click">SoundCloud</a></td></tr>
+          <tr><td>Automatic Sex</td><td>Original</td><td>Self-released, 2026</td><td><a href="https://soundcloud.com/moskitoss" data-event="soundcloud_click">SoundCloud</a></td></tr>
+          <tr><td>Three new productions</td><td>Originals</td><td>Due 2026</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="photos" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Click any photo to download; full-resolution video in the media pack</p>
+    <h2>Photos<em>.</em></h2>
+    <div class="photo-grid">
+      <figure class="shot"><img src="portrait-fur.jpg" alt="M.O.S portrait, Brussels winter" loading="lazy"><a class="dl" href="portrait-fur.jpg" download="MOS-portrait-brussels.jpg" data-event="photo_download">Download</a></figure>
+      <figure class="shot"><img src="hero-forest.jpg" alt="Open-air forest stage" loading="lazy"><a class="dl" href="hero-forest.jpg" download="MOS-forest-stage.jpg" data-event="photo_download">Download</a></figure>
+      <figure class="shot"><img src="crowd-red.jpg" alt="Festival floor under red light" loading="lazy"><a class="dl" href="crowd-red.jpg" download="MOS-festival-red.jpg" data-event="photo_download">Download</a></figure>
+      <figure class="shot"><img src="club-purple.jpg" alt="Club room from the booth" loading="lazy"><a class="dl" href="club-purple.jpg" download="MOS-club-room.jpg" data-event="photo_download">Download</a></figure>
+      <figure class="shot"><img src="beach.jpg" alt="Beach bar, disco balls in the palms" loading="lazy"><a class="dl" href="beach.jpg" download="MOS-beach.jpg" data-event="photo_download">Download</a></figure>
+      <figure class="shot"><img src="desert.jpg" alt="On the playa, desert" loading="lazy"><a class="dl" href="desert.jpg" download="MOS-desert.jpg" data-event="photo_download">Download</a></figure>
+      <figure class="shot"><img src="cdj-screen.jpg" alt="CDJ screens mid-set" loading="lazy"><a class="dl" href="cdj-screen.jpg" download="MOS-cdj-detail.jpg" data-event="photo_download">Download</a></figure>
+      <figure class="shot"><img src="vinyl.jpg" alt="Vinyl on the turntable" loading="lazy"><a class="dl" href="vinyl.jpg" download="MOS-vinyl.jpg" data-event="photo_download">Download</a></figure>
+    </div>
+    <div class="photo-actions">
+      <a class="btn fill" href="https://drive.google.com/drive/folders/1FTJ8PdyVIKS67OQCLuSHoGMmum1upTD6" data-event="epk_download">Full media pack (photos + video)</a>
+    </div>
+    <p class="note">Credit: courtesy of the artist. Higher-resolution exports and performance video are in the media pack.</p>
+  </div>
+</section>
+
+<section id="history" style="padding-top:0">
+  <div class="wrap twocol">
+    <div>
+      <p class="kicker">Verified, no padding</p>
+      <h2>Selected <em>history</em></h2>
+      <div class="hitem"><span class="d">2026</span><span class="v"><b>Kiosk Radio, Brussels</b><span>Live broadcast from the kiosk in Brussels park</span></span></div>
+      <div class="hitem"><span class="d">2026</span><span class="v"><b>Self-released run</b><span>Amour Seum, Cataclysme 2.0, Automatic Sex</span></span></div>
+      <div class="hitem"><span class="d">2024–26</span><span class="v"><b>Club, open-air and private dates</b><span>Belgium and beyond: festival floors, club rooms, beach and desert parties</span></span></div>
+      <div class="hitem"><span class="d">—</span><span class="v"><b>Monkey Parade Records</b><span>Gemmayzeh (Lui &amp; M.O.S remix), for Attari</span></span></div>
+      <p class="note">Full date list with venues available from management on request.</p>
+    </div>
+    <div>
+      <p class="kicker">Where to find him</p>
+      <h2>Channels<em>.</em></h2>
+      <ul class="tech">
+        <li><b>SoundCloud</b><br><a href="https://soundcloud.com/moskitoss" data-event="soundcloud_click">soundcloud.com/moskitoss</a>, tracks, remixes and sets</li>
+        <li><b>Instagram</b><br><a href="https://www.instagram.com/m.o.s_music/" data-event="instagram_click">@m.o.s_music</a></li>
+        <li><b>Facebook</b><br><a href="https://www.facebook.com/MOSMUZIK" data-event="facebook_click">facebook.com/MOSMUZIK</a></li>
+        <li><b>YouTube</b><br><a href="https://youtu.be/ggF-aYwcUM4" data-event="youtube_click">Kiosk Radio set</a></li>
+        <li><b>Website</b><br><a href="https://mosmusic.be">mosmusic.be</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="contact" id="contact">
+  <div class="wrap">
+    <p class="kicker" style="color:inherit;opacity:.7">Management replies within 48 hours</p>
+    <h2>Bookings <em>&amp; press</em></h2>
+    <a class="mail" href="mailto:booking.mosmusic@gmail.com" data-event="booking_email_click">booking.mosmusic@gmail.com</a>
+    <div class="links">
+      <a href="https://soundcloud.com/moskitoss" data-event="soundcloud_click">SoundCloud</a>
+      <a href="https://www.instagram.com/m.o.s_music/" data-event="instagram_click">Instagram</a>
+      <a href="https://www.facebook.com/MOSMUZIK" data-event="facebook_click">Facebook</a>
+      <a href="https://mosmusic.be">mosmusic.be</a>
+    </div>
+    <p class="small">M.O.S is developed with FLAVLAB SIGNAL. This page prints cleanly: use "Save as PDF" to generate the document version of this kit.</p>
+  </div>
+</div>
+
+<footer>
+  <span>M.O.S, Brussels — electronic press kit</span>
+  <span class="no-print"><a href="index.html">Back to the site</a></span>
+</footer>
+
+<script defer src="/_vercel/insights/script.js"></script>
+<script>
+(function(){
+  'use strict';
+  function track(name){
+    try{
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({event:name});
+      if (window.va) window.va('event',{name:name});
+    }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var el = e.target.closest('[data-event]');
+    if (el) track(el.getAttribute('data-event'));
+  });
+  document.querySelectorAll('.copybtn').forEach(function(b){
+    b.addEventListener('click', function(){
+      var src = document.getElementById(b.getAttribute('data-copy'));
+      var text = src ? src.innerText.trim() : '';
+      function done(ok){ var t=b.textContent; b.textContent = ok ? 'Copied' : 'Select and copy manually'; setTimeout(function(){ b.textContent=t; }, 1800); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function(){done(true)},function(){done(false)});
+      } else { done(false); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
