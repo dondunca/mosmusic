@@ -120,6 +120,10 @@ h2 em{font-style:normal;color:transparent;-webkit-text-stroke:1.5px var(--ink)}
 .release .title{font-family:'Anton',sans-serif;font-size:clamp(1.3rem,3.4vw,2.1rem);text-transform:uppercase}
 .release .meta{color:var(--smoke);font-size:.95rem}
 .release .go{font-weight:600;color:var(--rose);white-space:nowrap}
+.onair{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px;align-items:start}
+.onair figure{border:2px solid var(--ink)}
+.onair img{width:100%;height:auto;display:block;filter:contrast(1.05) saturate(1.06)}
+.onair-note{grid-column:1/-1;font-size:.9rem;color:var(--smoke);margin-top:2px}
 .players{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
 .embed{border:2px solid var(--ink);background:#fff}
 .embed iframe{display:block;width:100%;border:0}
@@ -245,8 +249,8 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
 
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span>Music</span><span><em>Emotion</em></span><span>Love</span><span><em>Energy</em></span><span>Amour Seum</span><span><em>Monkey Parade Records</em></span><span>Kiosk Radio, Brussels</span><span><em>Vinyl &amp; machines</em></span>
-    <span>Music</span><span><em>Emotion</em></span><span>Love</span><span><em>Energy</em></span><span>Amour Seum</span><span><em>Monkey Parade Records</em></span><span>Kiosk Radio, Brussels</span><span><em>Vinyl &amp; machines</em></span>
+    <span>Music</span><span><em>Emotion</em></span><span>Love</span><span><em>Energy</em></span><span>Amour Seum</span><span><em>Monkey Parade Records</em></span><span>Kiosk Radio, Brussels</span><span><em>Jam Radio liveset</em></span><span><em>Vinyl &amp; machines</em></span>
+    <span>Music</span><span><em>Emotion</em></span><span>Love</span><span><em>Energy</em></span><span>Amour Seum</span><span><em>Monkey Parade Records</em></span><span>Kiosk Radio, Brussels</span><span><em>Jam Radio liveset</em></span><span><em>Vinyl &amp; machines</em></span>
   </div>
 </div>
 
@@ -257,9 +261,12 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
     <div class="rooms-grid">
       <figure class="room"><img src="crowd-red.jpg" alt="Festival floor under red light" loading="lazy"><figcaption class="tag">Festival</figcaption></figure>
       <figure class="room"><img src="club-purple.jpg" alt="Packed club room from the booth" loading="lazy"><figcaption class="tag">Club</figcaption></figure>
+      <figure class="room"><img src="street-party.jpg" alt="Street party crowd in central Brussels seen from the decks" loading="lazy"><figcaption class="tag">Street</figcaption></figure>
+      <figure class="room"><img src="kiosk-pink.jpg" alt="M.O.S live on Kiosk Radio" loading="lazy"><figcaption class="tag">Radio</figcaption></figure>
       <figure class="room"><img src="beach.jpg" alt="Beach bar with disco balls in the palms" loading="lazy"><figcaption class="tag">Beach</figcaption></figure>
       <figure class="room"><img src="desert.jpg" alt="Out on the playa in the desert" loading="lazy"><figcaption class="tag">Desert</figcaption></figure>
       <figure class="room"><img src="palm-dj.jpg" alt="Playing between palm plants at a private party" loading="lazy"><figcaption class="tag">Private</figcaption></figure>
+      <figure class="room"><img src="gear-xone.jpg" alt="Turntable and Xone mixer at home" loading="lazy"><figcaption class="tag">Studio</figcaption></figure>
       <figure class="room"><img src="neon-rings.jpg" alt="Mixer glowing in the dark" loading="lazy"><figcaption class="tag">After hours</figcaption></figure>
     </div>
   </div>
@@ -300,6 +307,12 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
         <span class="meta">Live from the kiosk, Brussels, 2026</span>
         <span class="go">YouTube</span>
       </a>
+    </div>
+    <div class="onair">
+      <figure><img src="kiosk-denim.jpg" alt="M.O.S on Kiosk Radio, denim and cap" loading="lazy"></figure>
+      <figure><img src="kiosk-armsup.jpg" alt="M.O.S adjusting headphones in the Kiosk Radio booth" loading="lazy"></figure>
+      <figure><img src="kiosk-b2b.jpg" alt="Back to back set in the Kiosk Radio booth" loading="lazy"></figure>
+      <p class="onair-note">On air: multiple sessions from the Kiosk Radio booth in Brussels park, and a liveset for Jam Radio.</p>
     </div>
     <div class="players">
       <div class="embed video">
@@ -349,7 +362,8 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
       <div>
         <h3 class="block">Archive</h3>
         <ul style="list-style:none">
-          <li class="show"><span class="d">2026</span><span class="v"><b>Kiosk Radio</b><span>Brussels, Belgium, live broadcast</span></span><a href="https://youtu.be/ggF-aYwcUM4" data-event="youtube_click">Watch</a></li>
+          <li class="show"><span class="d">2026</span><span class="v"><b>Kiosk Radio</b><span>Brussels, Belgium, live broadcasts from the kiosk</span></span><a href="https://youtu.be/ggF-aYwcUM4" data-event="youtube_click">Watch</a></li>
+          <li class="show"><span class="d">21 Sep</span><span class="v"><b>Jam Radio</b><span>Liveset broadcast</span></span><span></span></li>
           <li class="show"><span class="d">2024–26</span><span class="v"><b>Club and open-air sets</b><span>Belgium and beyond, selected private and club dates</span></span><span></span></li>
         </ul>
         <p class="note">Full performance history available on request.</p>
@@ -373,8 +387,8 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
       <button class="morebtn" id="biobtn" type="button" aria-expanded="false" aria-controls="fullbio">Read the full bio</button>
     </div>
     <figure>
-      <img src="portrait-fur.jpg" alt="Portrait of M.O.S on a Brussels street" loading="lazy">
-      <figcaption>Brussels, winter</figcaption>
+      <img src="face-red.jpg" alt="Portrait of M.O.S under red light" loading="lazy">
+      <figcaption>After hours, red light</figcaption>
     </figure>
   </div>
 </section>
@@ -392,7 +406,7 @@ footer{background:var(--ink);color:var(--paper);padding:56px 20px 36px}
       </div>
     </div>
     <div class="epk-mini" aria-hidden="true">
-      <img src="portrait-fur.jpg" alt="" loading="lazy">
+      <img src="jam-radio.jpg" alt="" loading="lazy">
       <img src="crowd-red.jpg" alt="" loading="lazy">
       <img src="vinyl.jpg" alt="" loading="lazy">
     </div>
