@@ -37,7 +37,7 @@ a{color:inherit}
 .anton{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.01em}
 
 /* header */
-header{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:baseline;padding:16px 20px;background:linear-gradient(var(--paper) 60%,rgba(242,237,228,0));}
+header{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:baseline;gap:18px;flex-wrap:wrap;padding:16px 20px;background:linear-gradient(var(--paper) 60%,rgba(242,237,228,0));}
 header .mark{font-family:'Anton',sans-serif;font-size:1.15rem;text-decoration:none;letter-spacing:.02em}
 header .mark span{color:var(--rose)}
 header nav{display:flex;gap:20px;flex-wrap:wrap}
@@ -47,9 +47,9 @@ header nav a.book{color:var(--rose)}
 
 /* hero */
 .hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:96px 20px 0;position:relative;overflow:hidden}
-.hero-type{line-height:.78;user-select:none}
-.hero-type .row{display:block;font-family:'Anton',sans-serif;font-size:clamp(4.6rem,27vw,23rem);text-transform:uppercase;white-space:nowrap}
-.hero-type .row.long{font-size:clamp(2.5rem,13.2vw,11.5rem)}
+.hero-type{line-height:.92;user-select:none}
+.hero-type .row{display:block;font-family:'Anton',sans-serif;font-size:max(4.6rem,26.5vw);text-transform:uppercase;white-space:nowrap}
+.hero-type .row.long{font-size:max(2.5rem,13vw)}
 .hero-type .row.outline{color:transparent;-webkit-text-stroke:2px var(--ink)}
 .hero-type .row em{font-style:normal;color:var(--rose)}
 .hero-under{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px;align-items:end;border-top:2px solid var(--ink);margin-top:3vh;padding:18px 0 26px}
