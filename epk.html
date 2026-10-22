@@ -3,381 +3,230 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>M.O.S — Press Kit</title>
-<meta name="description" content="Electronic press kit for M.O.S, DJ and producer from Brussels: bios in English and French, photos, music, performance history and booking contact.">
-<link rel="canonical" href="https://mosmusic.be/epk.html">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
-<link rel="apple-touch-icon" href="favicon-512.png">
-<meta property="og:type" content="profile">
-<meta property="og:title" content="M.O.S — Press Kit">
-<meta property="og:description" content="Bios, photos, music, performance history and booking contact for M.O.S, Brussels.">
-<meta property="og:url" content="https://mosmusic.be/epk.html">
+<title>M.O.S — Press kit / EPK</title>
+<meta name="description" content="Official press kit for M.O.S, Brussels DJ and producer. Bios, photos, credits, booking contact.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="M.O.S — Press kit">
+<meta property="og:description" content="Bios, photos, credits and booking contact for M.O.S, Brussels.">
 <meta property="og:image" content="https://mosmusic.be/og.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://mosmusic.be/epk.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;600&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-:root{
-  --paper:#F2EDE4;
-  --ink:#171310;
-  --rose:#E04E8F;
-  --smoke:#7E776C;
-  --line:#CFC8BB;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:'Familjen Grotesk',sans-serif;font-size:17px;line-height:1.55}
-img{display:block;max-width:100%}
+:root{--paper:#F7F3EA;--ink:#171310;--pink:#E04E8F;--smoke:#7E776C;--line:#CFC8BB}
+*{margin:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'Familjen Grotesk',sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
 a{color:inherit}
-::selection{background:var(--rose);color:var(--paper)}
-
-header{display:flex;justify-content:space-between;align-items:baseline;gap:18px;flex-wrap:wrap;padding:16px 20px;border-bottom:2px solid var(--ink)}
-header .mark{font-family:'Anton',sans-serif;font-size:1.15rem;text-decoration:none}
-header .mark span{color:var(--rose)}
-header nav{display:flex;gap:20px;flex-wrap:wrap}
-header nav a{text-decoration:none;font-size:.95rem;font-weight:500}
-header nav a:hover,header nav a:focus-visible{color:var(--rose)}
-
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-section{padding:64px 0}
-h1{font-family:'Anton',sans-serif;font-size:clamp(3rem,10vw,7rem);text-transform:uppercase;line-height:.9}
-h1 em{font-style:normal;color:var(--rose)}
-h2{font-family:'Anton',sans-serif;font-size:clamp(1.7rem,4.6vw,2.8rem);text-transform:uppercase;line-height:.95;margin-bottom:28px}
-h2 em{font-style:normal;color:transparent;-webkit-text-stroke:1.5px var(--ink)}
-.kicker{font-size:.95rem;color:var(--smoke);margin-bottom:10px}
-.btn{display:inline-block;padding:13px 22px;border:2px solid var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;background:transparent;transition:background .15s,color .15s;cursor:pointer}
-.btn:hover,.btn:focus-visible{background:var(--ink);color:var(--paper)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.serif{font-family:'Instrument Serif',serif;font-weight:400}
+.serif em{font-style:italic;color:var(--pink)}
+.script{font-family:'Caveat',cursive;font-weight:600;color:var(--pink)}
+.kicker{font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--smoke)}
+header.mast{border-bottom:2px solid var(--ink);background:var(--paper)}
+.mast-in{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;max-width:1180px;margin:0 auto}
+.mast .logo{font-family:'Anton',sans-serif;font-size:1.35rem;letter-spacing:.08em;text-decoration:none}
+.mast .logo i{font-style:normal;color:var(--pink)}
+.mast a.backlink{font-size:.95rem}
+.btn{display:inline-block;padding:14px 26px;font-weight:600;font-size:.95rem;letter-spacing:.03em;text-decoration:none;border:2px solid var(--ink)}
 .btn.fill{background:var(--ink);color:var(--paper)}
-.btn.fill:hover,.btn.fill:focus-visible{background:var(--rose);border-color:var(--rose)}
-a:focus-visible,.btn:focus-visible{outline:3px solid var(--rose);outline-offset:2px}
-
-/* masthead */
-.masthead{padding:56px 0 40px;border-bottom:2px solid var(--ink)}
-.mast-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:end}
-.mast-grid p.tag{font-size:1.15rem;max-width:40ch;margin-top:18px}
-.mast-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
-.mast-photo{border:2px solid var(--ink)}
-.mast-photo img{width:100%;max-height:420px;object-fit:cover;object-position:top}
-
-/* facts */
-.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:2px solid var(--ink);margin-top:0}
-.fact{padding:20px;border-right:1px solid var(--line)}
-.fact:last-child{border-right:0}
-.fact .k{font-size:.82rem;color:var(--smoke);margin-bottom:4px}
-.fact .v{font-weight:600;font-size:1.02rem;overflow-wrap:anywhere}
-td,.bio-col p{overflow-wrap:anywhere}
-
+.btn.fill:hover,.btn.fill:focus-visible{background:var(--pink);border-color:var(--pink);color:var(--ink)}
+.btn.line:hover,.btn.line:focus-visible{background:var(--ink);color:var(--paper)}
+.head{padding:60px 0 50px}
+.head h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.04;max-width:20ch}
+.head .sub{margin-top:18px;color:#333;max-width:40rem}
+.cta-row{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+section{padding:60px 0;border-top:2px solid var(--ink)}
+h2.sec{font-family:'Anton',sans-serif;font-size:clamp(1.8rem,4.6vw,3.2rem);text-transform:uppercase;line-height:.96;margin-bottom:8px}
+h2.sec em{font-style:normal;color:var(--pink)}
+.sec-note{color:var(--smoke);max-width:46rem;margin-bottom:34px}
+/* dates */
+.dates{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.dates .d{border-bottom:1px solid var(--line);padding-bottom:10px}
+.dates .dv{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:1.15rem;letter-spacing:.04em}
+.dates .dd{color:var(--smoke);font-size:.9rem;margin-top:2px}
+.withline{margin-top:22px;color:var(--smoke);font-size:.95rem;max-width:46rem}
+.withline b{color:var(--ink);font-weight:600}
+@media(max-width:760px){.dates{grid-template-columns:1fr}}
 /* bios */
-.bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
-.bio-col h3{font-family:'Anton',sans-serif;font-size:1.15rem;text-transform:uppercase;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:14px}
-.bio-col p{margin-bottom:1em;max-width:58ch}
-.bio-col .count{font-size:.82rem;color:var(--smoke)}
-.copybtn{background:none;border:2px solid var(--ink);padding:8px 14px;font:inherit;font-size:.88rem;font-weight:600;cursor:pointer;margin-top:4px}
-.copybtn:hover,.copybtn:focus-visible{background:var(--ink);color:var(--paper)}
-
-/* listen */
-.players{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.embed{border:2px solid var(--ink);background:#fff}
-.embed iframe{display:block;width:100%;border:0}
-.embed .label{display:flex;justify-content:space-between;gap:10px;padding:10px 14px;font-size:.88rem;border-top:2px solid var(--ink)}
-.embed .label a{font-weight:600}
-.video{grid-column:1/-1}
-
-/* discography table */
-table{width:100%;border-collapse:collapse;border:2px solid var(--ink)}
-th{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:.95rem;text-align:left;padding:12px 14px;border-bottom:2px solid var(--ink)}
-td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
-tr:last-child td{border-bottom:0}
-td a{color:var(--rose);font-weight:600;text-decoration:underline;text-underline-offset:3px}
-.tablewrap{overflow-x:auto}
-
+.bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.bio-col h3{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--smoke);margin-bottom:12px}
+.bio-col p{margin-bottom:14px;overflow-wrap:anywhere}
+.bio-col.fr p{font-style:italic}
+.copybtn{font:inherit;font-size:.85rem;font-weight:600;background:none;border:2px solid var(--ink);padding:8px 14px;cursor:pointer;margin-top:4px}
+.copybtn:hover{background:var(--ink);color:var(--paper)}
+@media(max-width:860px){.bio-grid{grid-template-columns:1fr}}
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 24px}
+.facts .k{font-size:.72rem;letter-spacing:.2em;color:var(--smoke);text-transform:uppercase}
+.facts .v{font-weight:600;margin-top:2px;overflow-wrap:anywhere}
+@media(max-width:760px){.facts{grid-template-columns:1fr 1fr}}
 /* photos */
-.photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.shot{border:2px solid var(--ink);position:relative}
-.shot img{width:100%;aspect-ratio:3/4;object-fit:cover}
-.shot .dl{position:absolute;right:0;bottom:0;background:var(--paper);border-top:2px solid var(--ink);border-left:2px solid var(--ink);padding:6px 10px;font-size:.82rem;font-weight:600;text-decoration:none}
-.shot .dl:hover,.shot .dl:focus-visible{background:var(--rose);color:var(--paper)}
-.photo-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
-.note{margin-top:12px;font-size:.88rem;color:var(--smoke)}
-
-/* history + tech */
-.twocol{display:grid;grid-template-columns:1fr 1fr;gap:48px}
-.hitem{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
-.hitem .d{font-family:'Anton',sans-serif}
-.hitem .v b{font-weight:600}
-.hitem .v span{display:block;color:var(--smoke);font-size:.92rem}
-ul.tech{list-style:none}
-ul.tech li{padding:12px 0;border-bottom:1px solid var(--line)}
-ul.tech li b{font-weight:600}
-
-/* contact */
-.contact{background:var(--ink);color:var(--paper);margin-top:40px}
-.contact .wrap{padding-top:64px;padding-bottom:64px}
-.contact h2 em{-webkit-text-stroke-color:var(--paper)}
-.contact .mail{font-family:'Anton',sans-serif;font-size:clamp(1.4rem,4.5vw,3rem);color:var(--rose);text-decoration:none;word-break:break-all}
-.contact .mail:hover,.contact .mail:focus-visible{text-decoration:underline;text-underline-offset:5px}
-.contact .links{margin-top:22px;display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}
-.contact .links a{color:var(--paper)}
-.contact .links a:hover{color:var(--rose)}
-.contact p.small{margin-top:18px;font-size:.88rem;opacity:.7}
-
-footer{padding:26px 20px;font-size:.88rem;color:var(--smoke);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-footer a{color:var(--smoke)}
-
-@media (max-width:840px){
-  .mast-grid,.bio-grid,.players,.twocol{grid-template-columns:1fr}
-  .facts{grid-template-columns:1fr 1fr}
-  .fact:nth-child(2){border-right:0}
-  .fact{border-bottom:1px solid var(--line)}
-  .fact:nth-last-child(-n+2){border-bottom:0}
-  .photo-grid{grid-template-columns:1fr 1fr}
-  section{padding:48px 0}
-}
-
-/* print = the downloadable EPK */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.grid figure{position:relative}
+.grid img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:contrast(1.04) saturate(1.04)}
+.grid figcaption{font-size:.78rem;color:var(--smoke);margin-top:6px;display:flex;justify-content:space-between;gap:8px}
+.grid a.dl{font-weight:600;color:var(--ink)}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+/* brand */
+.brand-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.brand-grid img{max-width:26rem}
+.brand ul{list-style:none;margin-top:14px}
+.brand li{padding:8px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.sw{display:inline-block;width:14px;height:14px;border:1px solid var(--ink);vertical-align:-2px;margin-right:8px}
+@media(max-width:860px){.brand-grid{grid-template-columns:1fr}}
+footer{border-top:2px solid var(--ink);padding:30px 0 50px;font-size:.9rem;color:var(--smoke)}
+.foot-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot-row a{color:var(--ink)}
 @media print{
-  header nav,.mast-actions,.copybtn,.photo-actions,.players,.shot .dl,footer .no-print{display:none !important}
-  body{font-size:12px}
-  .masthead{padding:10px 0}
-  section{padding:18px 0;break-inside:avoid}
-  .contact{background:none;color:var(--ink);border-top:2px solid var(--ink)}
-  .contact .mail{color:var(--ink)}
-  a{text-decoration:none}
+  header.mast,.cta-row,.copybtn,footer .foot-row a[href^="http"]{display:none}
+  body{font-size:12pt}
+  section{page-break-inside:avoid}
 }
 </style>
 </head>
 <body>
-
-<header>
-  <a class="mark" href="index.html">M<span>.</span>O<span>.</span>S</a>
-  <nav>
-    <a href="index.html">Site</a>
-    <a href="#bios">Bios</a>
-    <a href="#listen">Listen</a>
-    <a href="#photos">Photos</a>
-    <a href="#history">History</a>
-    <a href="#contact" style="color:var(--rose)">Booking</a>
-  </nav>
+<header class="mast">
+  <div class="mast-in">
+    <a class="logo" href="index.html">M<i>.</i>O<i>.</i>S</a>
+    <a class="backlink" href="index.html">← mosmusic.be</a>
+  </div>
 </header>
+<main>
 
-<div class="masthead">
-  <div class="wrap mast-grid">
-    <div>
-      <p class="kicker">Electronic press kit, updated October 2026</p>
-      <h1>M.O.S <em>press kit</em></h1>
-      <p class="tag">Everything a promoter, agent, label or journalist needs on one page: bios, photography, music, history and contact.</p>
-      <div class="mast-actions">
-        <a class="btn fill" href="MOS-press-kit.pdf" download data-event="epk_pdf_download">Press kit (PDF)</a>
-        <a class="btn" href="MOS-press-pack.zip" download data-event="epk_pack_download">Press pack (ZIP)</a>
-        <a class="btn" href="mailto:booking.mosmusic@gmail.com?subject=Booking%20request%20%E2%80%94%20M.O.S" data-event="booking_email_click">Book M.O.S</a>
-      </div>
-      <p class="note">The ZIP holds photos in web and social sizes, the logo set and copy-ready bios. Performance video in the <a href="https://drive.google.com/drive/folders/1FTJ8PdyVIKS67OQCLuSHoGMmum1upTD6" data-event="epk_download" style="text-decoration:underline">media library</a>.</p>
-    </div>
-    <figure class="mast-photo">
-      <img src="jam-radio.jpg" alt="M.O.S on air for Jam Radio" fetchpriority="high">
-    </figure>
+<div class="head wrap">
+  <p class="kicker">Press kit · Édition Oct 2026</p>
+  <h1 class="serif" style="margin-top:14px">Everything a promoter needs, <em>in one place.</em></h1>
+  <p class="sub">M.O.S, Brussels. Eclectic house, emotional edits and high-energy closing sets. Bios in EN and FR, photos in ready sizes, verified credits, booking contact.</p>
+  <div class="cta-row">
+    <a class="btn fill" href="MOS-press-kit.pdf" data-event="pdf_download" download>Download the PDF (Le Dossier)</a>
+    <a class="btn line" href="MOS-press-pack.zip" data-event="zip_download" download>Full press pack (ZIP, 4.4MB)</a>
   </div>
 </div>
 
-<div class="wrap" style="margin-top:40px">
-  <div class="facts">
-    <div class="fact"><div class="k">Artist</div><div class="v">M.O.S<br>(Michael Oulbaz Suarez)</div></div>
-    <div class="fact"><div class="k">Base</div><div class="v">Brussels, Belgium<br>plays across Europe</div></div>
-    <div class="fact"><div class="k">Sound</div><div class="v">Eclectic house, R&amp;B warmth, Eastern lines, pronounced bass</div></div>
-    <div class="fact"><div class="k">Booking</div><div class="v">booking.mosmusic@gmail.com</div></div>
-  </div>
-</div>
-
-<section id="bios">
+<section>
   <div class="wrap">
-    <p class="kicker">Copy-ready, in two lengths and two languages</p>
-    <h2>Bios<em>.</em></h2>
+    <h2 class="sec">Selected dates<em>.</em></h2>
+    <p class="sec-note">From the artist's published posters and event pages.</p>
+    <div class="dates">
+      <div class="d"><p class="dv">Voodoo Village</p><p class="dd">Grimbergen · 2023 &amp; 2024 editions</p></div>
+      <div class="d"><p class="dv">No Man's World</p><p class="dd">Desert festival · bill with Marc Romboy, Jonathan Kaspar</p></div>
+      <div class="d"><p class="dv">Hangar, Brussels</p><p class="dd">MIND parties, multiple editions</p></div>
+      <div class="d"><p class="dv">Fondation Boghossian</p><p class="dd">Brussels</p></div>
+      <div class="d"><p class="dv">Jeux d'Hiver</p><p class="dd">Brussels</p></div>
+      <div class="d"><p class="dv">The Egg · Maison de la Poste · Reset</p><p class="dd">Brussels</p></div>
+      <div class="d"><p class="dv">Tofu&amp;Acid, Munich · Private, Los Angeles</p><p class="dd">International dates</p></div>
+      <div class="d"><p class="dv">Kiosk Radio &amp; Jam Radio</p><p class="dd">Broadcast sessions, latest Kiosk session 02/26</p></div>
+    </div>
+    <p class="withline">Festival bills shared with <b>Adriatique, WhoMadeWho, Paula Temple, NTO, Nicole Moudaber, Mind Against, Kevin de Vries and Marc Romboy</b>.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec">Biography<em>.</em></h2>
+    <p class="sec-note">Copy-ready. Short version first, both languages.</p>
     <div class="bio-grid">
-      <div class="bio-col">
-        <h3>Short, English <span class="count">(~70 words)</span></h3>
-        <div id="bio-short-en">
-          <p>M.O.S is the alias of Michael Oulbaz Suarez, a DJ and producer based in Brussels. Born of African roots, he folds R&amp;B warmth and Eastern lines into eclectic, bass-forward house, mixing vinyl, hardware and CDJs in the same channel. His remix of Attari's "Gemmayzeh" (with Lui) appeared on Monkey Parade Records; his sets run from Brussels club rooms, Kiosk Radio and Jam Radio to forest stages and beach floors.</p>
-        </div>
-        <button class="copybtn" data-copy="bio-short-en" data-event="bio_copy">Copy text</button>
+      <div class="bio-col" id="bio-en">
+        <h3>English</h3>
+        <p id="bio-en-short"><strong>Short.</strong> M.O.S is a DJ and producer from Brussels playing eclectic, bass-forward house built on emotional edits. Two editions of Voodoo Village, Hangar's MIND parties, Kiosk Radio and Jam Radio sessions, floors from Munich to Los Angeles. Every room is a record.</p>
+        <p id="bio-en-full"><strong>Full.</strong> M.O.S is a DJ and producer from Brussels. His sets move through eclectic, bass-forward house built on emotional edits, with selections shaped to the room in front of him rather than a fixed playlist. The range shows in the rooms: two editions of Voodoo Village on bills with Adriatique, WhoMadeWho and Nicole Moudaber, a desert festival with Marc Romboy, Hangar's MIND parties, evenings at Fondation Boghossian and Jeux d'Hiver, broadcast sessions for Kiosk Radio and Jam Radio, and private floors from Munich to Los Angeles. On record: the Gemmayzeh remix with Lui on Monkey Parade Records, and self-released tracks including Amour Seum, Cataclysme 2.0 and Automatic Sex. His closing sets are the signature: high-energy, emotional, built to keep a floor present until the lights come up.</p>
+        <button class="copybtn" data-copy="bio-en" data-event="bio_copy_en">Copy EN bios</button>
       </div>
-      <div class="bio-col">
-        <h3>Short, Français <span class="count">(~70 mots)</span></h3>
-        <div id="bio-short-fr">
-          <p>M.O.S, alias de Michael Oulbaz Suarez, est DJ et producteur basé à Bruxelles. De racines africaines, il glisse la chaleur du R&amp;B et des lignes orientales dans une house éclectique et physique, mêlant vinyles, machines et CDJs dans le même canal. Son remix de « Gemmayzeh » d'Attari (avec Lui) est sorti sur Monkey Parade Records ; ses sets vont des clubs bruxellois, de Kiosk Radio et de Jam Radio aux scènes en forêt et aux plages.</p>
-        </div>
-        <button class="copybtn" data-copy="bio-short-fr" data-event="bio_copy">Copier le texte</button>
+      <div class="bio-col fr" id="bio-fr">
+        <h3>Français</h3>
+        <p id="bio-fr-short"><strong>Court.</strong> M.O.S est un DJ et producteur bruxellois, entre house éclectique et bass-forward et edits émotionnels. Deux éditions de Voodoo Village, les soirées MIND du Hangar, des sessions Kiosk Radio et Jam Radio, des salles de Munich à Los Angeles. Chaque salle est un disque.</p>
+        <p id="bio-fr-full"><strong>Long.</strong> M.O.S est un DJ et producteur bruxellois. Ses sets traversent une house éclectique et bass-forward, portée par des edits émotionnels, des sélections façonnées pour la salle plutôt que par une playlist figée. Deux éditions de Voodoo Village aux côtés d'Adriatique, WhoMadeWho et Nicole Moudaber, un festival dans le désert avec Marc Romboy, les soirées MIND du Hangar, la Fondation Boghossian, les Jeux d'Hiver, des sessions Kiosk Radio et Jam Radio, et des salles privées de Munich à Los Angeles. Côté disques : le remix de Gemmayzeh avec Lui sur Monkey Parade Records, et des titres autoproduits dont Amour Seum, Cataclysme 2.0 et Automatic Sex. Ses closing sets sont la signature : intenses, émotionnels, pensés pour garder la salle présente jusqu'aux lumières.</p>
+        <button class="copybtn" data-copy="bio-fr" data-event="bio_copy_fr">Copier les bios FR</button>
       </div>
-      <div class="bio-col">
-        <h3>Full, English <span class="count">(~250 words)</span></h3>
-        <div id="bio-full-en">
-          <p>M.O.S is the project of Michael Oulbaz Suarez, a selector who came to production through years of listening: analog records, East African and Eastern tonalities, the R&amp;B he grew up on, and the deep end of house music. That blend gives his sets their signature, seductive rhythms under hypnotic patience, groove placed before spectacle.</p>
-          <p>Based in Brussels, he moves between vinyl, hardware and CDJs, treating tradition and technology as parts of one instrument. On record, his remix of Attari's "Gemmayzeh", made with Lui, was released on Monkey Parade Records, and 2026 brought a run of self-released tracks: Amour Seum, Cataclysme 2.0 and Automatic Sex. He has broadcast repeatedly from the Kiosk Radio booth in Brussels park and played a liveset for Jam Radio.</p>
-          <p>On stage, the range is the point. M.O.S has played red-lit festival floors, packed club rooms, beach bars under the palms, private parties and the open desert, reading each floor rather than fighting it, and adjusting the bag accordingly.</p>
-          <p>Three new productions are currently in the works, sample-driven and machine-built. Behind them sits a longer plan: a label and a party series of his own, assembled the way he builds a set, piece by piece, keeping only what earns its place. For bookings and press, management responds within 48 hours.</p>
-        </div>
-        <button class="copybtn" data-copy="bio-full-en" data-event="bio_copy">Copy text</button>
-      </div>
-      <div class="bio-col">
-        <h3>Technical notes</h3>
-        <ul class="tech">
-          <li><b>Setups</b><br>CDJ sets, vinyl sets, and hybrid setups with hardware; adapts to the booth.</li>
-          <li><b>Set lengths</b><br>From 1-hour festival slots to all-night club sets.</li>
-          <li><b>Formats</b><br>Club nights, festivals, radio and streams, private events.</li>
-          <li><b>Riders</b><br>Technical and hospitality riders available on request.</li>
-          <li><b>Travel</b><br>Based in Brussels; travels from BRU.</li>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec">Facts<em>.</em></h2>
+    <div class="facts" style="margin-top:26px">
+      <div><p class="k">Name</p><p class="v">M.O.S (Michael Oulbaz Suarez)</p></div>
+      <div><p class="k">Base</p><p class="v">Brussels, Belgium</p></div>
+      <div><p class="k">Sound</p><p class="v">Eclectic, bass-forward house</p></div>
+      <div><p class="k">Formats</p><p class="v">Club · Closing · Radio · Open air</p></div>
+      <div><p class="k">Label credit</p><p class="v">Monkey Parade Records</p></div>
+      <div><p class="k">Booking</p><p class="v"><a href="mailto:booking.mosmusic@gmail.com">booking.mosmusic@gmail.com</a></p></div>
+      <div><p class="k">SoundCloud</p><p class="v"><a href="https://soundcloud.com/moskitoss">soundcloud.com/moskitoss</a></p></div>
+      <div><p class="k">Instagram</p><p class="v"><a href="https://www.instagram.com/m.o.s_music/">@m.o.s_music</a></p></div>
+      <div><p class="k">Facebook</p><p class="v"><a href="https://www.facebook.com/MOSMUZIK">MOSMUZIK</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec">Photos<em>.</em></h2>
+    <p class="sec-note">Right-click or tap Download for the web size. The ZIP holds web-1600 and social-1080 versions of all 25.</p>
+    <div class="grid">
+      <figure><img src="jam-radio.jpg" alt="Jam Radio liveset portrait" loading="lazy"><figcaption><span>Jam Radio</span><a class="dl" href="jam-radio.jpg" download>Download</a></figcaption></figure>
+      <figure><img src="face-red.jpg" alt="Red-lit portrait" loading="lazy"><figcaption><span>After dark</span><a class="dl" href="face-red.jpg" download>Download</a></figcaption></figure>
+      <figure><img src="street-party.jpg" alt="Street party from the booth" loading="lazy"><figcaption><span>La rue</span><a class="dl" href="street-party.jpg" download>Download</a></figcaption></figure>
+      <figure><img src="hero-forest.jpg" alt="Forest festival set" loading="lazy"><figcaption><span>La forêt</span><a class="dl" href="hero-forest.jpg" download>Download</a></figcaption></figure>
+      <figure><img src="desert.jpg" alt="Desert festival set" loading="lazy"><figcaption><span>Le désert</span><a class="dl" href="desert.jpg" download>Download</a></figcaption></figure>
+      <figure><img src="kiosk-denim.jpg" alt="Kiosk Radio session" loading="lazy" style="object-position:center 20%"><figcaption><span>Kiosk Radio</span><a class="dl" href="kiosk-denim.jpg" download>Download</a></figcaption></figure>
+      <figure><img src="club-purple.jpg" alt="Purple club floor" loading="lazy"><figcaption><span>Le club</span><a class="dl" href="club-purple.jpg" download>Download</a></figcaption></figure>
+      <figure><img src="crowd-red.jpg" alt="Red-lit crowd" loading="lazy"><figcaption><span>Après</span><a class="dl" href="crowd-red.jpg" download>Download</a></figcaption></figure>
+      <figure><img src="face-beach.jpg" alt="Beach portrait" loading="lazy"><figcaption><span>Portrait</span><a class="dl" href="face-beach.jpg" download>Download</a></figcaption></figure>
+      <figure><img src="gear-xone.jpg" alt="Mixer close-up" loading="lazy"><figcaption><span>The booth</span><a class="dl" href="gear-xone.jpg" download>Download</a></figcaption></figure>
+      <figure><img src="beach.jpg" alt="Beach set" loading="lazy"><figcaption><span>La plage</span><a class="dl" href="beach.jpg" download>Download</a></figcaption></figure>
+      <figure><img src="portrait-fur.jpg" alt="Fur hat portrait" loading="lazy"><figcaption><span>Portrait</span><a class="dl" href="portrait-fur.jpg" download>Download</a></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="brand">
+  <div class="wrap">
+    <h2 class="sec">Brand<em>.</em></h2>
+    <div class="brand-grid">
+      <img src="mos-wordmark.svg" alt="M.O.S wordmark" loading="lazy">
+      <div>
+        <ul>
+          <li><span class="sw" style="background:#171310"></span>Ink #171310</li>
+          <li><span class="sw" style="background:#F2EDE4"></span>Paper #F2EDE4</li>
+          <li><span class="sw" style="background:#E04E8F"></span>Pink #E04E8F</li>
+          <li>Display: Anton · Text: Familjen Grotesk</li>
+          <li>Motif: MUSIC EMOTION LOVE ENERGY</li>
+          <li>Please do not recolour or distort the wordmark. Vector files in the ZIP.</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<section id="listen" style="padding-top:0">
-  <div class="wrap">
-    <p class="kicker">Hear him before you write or book</p>
-    <h2>Listen<em>.</em></h2>
-    <div class="players">
-      <div class="embed video">
-        <iframe title="M.O.S live on Kiosk Radio, Brussels" loading="lazy" height="420" src="https://www.youtube-nocookie.com/embed/ggF-aYwcUM4" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="label"><span>Kiosk Radio, Brussels, full set</span><a href="https://youtu.be/ggF-aYwcUM4" data-event="youtube_click">YouTube</a></div>
-      </div>
-      <div class="embed">
-        <iframe title="AMOUR SEUM on SoundCloud" loading="lazy" height="166" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/moskitoss/amour-seum&color=%23e04e8f&auto_play=false&show_user=true"></iframe>
-        <div class="label"><span>Latest release</span><a href="https://soundcloud.com/moskitoss/amour-seum" data-event="soundcloud_click">Amour Seum</a></div>
-      </div>
-      <div class="embed">
-        <iframe title="Gemmayzeh (Lui and M.O.S remix) on SoundCloud" loading="lazy" height="166" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/attari-sc/gemmayzeh-lui-m-o-s-remix&color=%23e04e8f&auto_play=false&show_user=true"></iframe>
-        <div class="label"><span>On Monkey Parade Records</span><a href="https://soundcloud.com/attari-sc/gemmayzeh-lui-m-o-s-remix" data-event="soundcloud_click">Gemmayzeh remix</a></div>
-      </div>
-    </div>
-    <div class="tablewrap" style="margin-top:36px">
-      <table>
-        <thead><tr><th>Release</th><th>Role</th><th>Label / year</th><th>Link</th></tr></thead>
-        <tbody>
-          <tr><td>Amour Seum</td><td>Original</td><td>Self-released, 2026</td><td><a href="https://soundcloud.com/moskitoss/amour-seum" data-event="soundcloud_click">SoundCloud</a></td></tr>
-          <tr><td>Gemmayzeh (Lui &amp; M.O.S remix)</td><td>Remix of Attari</td><td>Monkey Parade Records</td><td><a href="https://soundcloud.com/attari-sc/gemmayzeh-lui-m-o-s-remix" data-event="soundcloud_click">SoundCloud</a></td></tr>
-          <tr><td>Cataclysme 2.0</td><td>Original</td><td>Self-released, 2026</td><td><a href="https://soundcloud.com/moskitoss" data-event="soundcloud_click">SoundCloud</a></td></tr>
-          <tr><td>Automatic Sex</td><td>Original</td><td>Self-released, 2026</td><td><a href="https://soundcloud.com/moskitoss" data-event="soundcloud_click">SoundCloud</a></td></tr>
-          <tr><td>Three new productions</td><td>Originals</td><td>Due 2026</td><td>—</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section id="photos" style="padding-top:0">
-  <div class="wrap">
-    <p class="kicker">Click any photo to download; full-resolution video in the media pack</p>
-    <h2>Photos<em>.</em></h2>
-    <div class="photo-grid">
-      <figure class="shot"><img src="jam-radio.jpg" alt="M.O.S on air for Jam Radio" loading="lazy"><a class="dl" href="jam-radio.jpg" download="MOS-jam-radio.jpg" data-event="photo_download">Download</a></figure>
-      <figure class="shot"><img src="face-red.jpg" alt="Portrait under red light" loading="lazy"><a class="dl" href="face-red.jpg" download="MOS-portrait-red.jpg" data-event="photo_download">Download</a></figure>
-      <figure class="shot"><img src="kiosk-knit.jpg" alt="Kiosk Radio booth, white knit" loading="lazy"><a class="dl" href="kiosk-knit.jpg" download="MOS-kiosk-radio.jpg" data-event="photo_download">Download</a></figure>
-      <figure class="shot"><img src="hero-forest.jpg" alt="Open-air forest stage" loading="lazy"><a class="dl" href="hero-forest.jpg" download="MOS-forest-stage.jpg" data-event="photo_download">Download</a></figure>
-      <figure class="shot"><img src="street-party.jpg" alt="Brussels street party from the decks" loading="lazy"><a class="dl" href="street-party.jpg" download="MOS-street-party.jpg" data-event="photo_download">Download</a></figure>
-      <figure class="shot"><img src="crowd-red.jpg" alt="Festival floor under red light" loading="lazy"><a class="dl" href="crowd-red.jpg" download="MOS-festival-red.jpg" data-event="photo_download">Download</a></figure>
-      <figure class="shot"><img src="club-purple.jpg" alt="Club room from the booth" loading="lazy"><a class="dl" href="club-purple.jpg" download="MOS-club-room.jpg" data-event="photo_download">Download</a></figure>
-      <figure class="shot"><img src="face-beach.jpg" alt="Portrait, red cap and paisley shirt" loading="lazy"><a class="dl" href="face-beach.jpg" download="MOS-portrait-summer.jpg" data-event="photo_download">Download</a></figure>
-      <figure class="shot"><img src="portrait-fur.jpg" alt="Brussels winter portrait" loading="lazy"><a class="dl" href="portrait-fur.jpg" download="MOS-portrait-brussels.jpg" data-event="photo_download">Download</a></figure>
-      <figure class="shot"><img src="beach.jpg" alt="Beach bar, disco balls in the palms" loading="lazy"><a class="dl" href="beach.jpg" download="MOS-beach.jpg" data-event="photo_download">Download</a></figure>
-      <figure class="shot"><img src="desert.jpg" alt="On the playa, desert" loading="lazy"><a class="dl" href="desert.jpg" download="MOS-desert.jpg" data-event="photo_download">Download</a></figure>
-      <figure class="shot"><img src="gear-xone.jpg" alt="Turntable and Xone mixer" loading="lazy"><a class="dl" href="gear-xone.jpg" download="MOS-studio.jpg" data-event="photo_download">Download</a></figure>
-    </div>
-    <div class="photo-actions">
-      <a class="btn fill" href="MOS-press-pack.zip" download data-event="epk_pack_download">Press pack (all photos, two sizes + logos + bios)</a>
-      <a class="btn" href="https://drive.google.com/drive/folders/1FTJ8PdyVIKS67OQCLuSHoGMmum1upTD6" data-event="epk_download">Video media library</a>
-    </div>
-    <p class="note">Credit: courtesy of the artist. The pack carries each photo at web size (~1600px) and social size (1080px).</p>
-  </div>
-</section>
-
-<section id="brand" style="padding-top:0">
-  <div class="wrap">
-    <p class="kicker">Use the marks as provided; don't recolour or distort</p>
-    <h2>Brand<em>.</em></h2>
-    <div class="twocol">
-      <div style="border:2px solid var(--ink);padding:36px;display:flex;align-items:center;justify-content:center;background:var(--paper)">
-        <img src="mos-wordmark.svg" alt="M.O.S wordmark" style="width:min(380px,80%)">
-      </div>
-      <ul class="tech">
-        <li><b>Wordmark</b><br>Anton, with pink points. SVG and PNG in ink, paper and mono are in the press pack.</li>
-        <li><b>Colours</b><br>Ink #171310, Paper #F2EDE4, Pink #E04E8F.</li>
-        <li><b>Type</b><br>Anton for display, Familjen Grotesk for text. Both free via Google Fonts.</li>
-        <li><b>Motif</b><br>Music, Emotion, Love, Energy.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section id="history" style="padding-top:0">
-  <div class="wrap twocol">
-    <div>
-      <p class="kicker">Verified, no padding</p>
-      <h2>Selected <em>history</em></h2>
-      <div class="hitem"><span class="d">2026</span><span class="v"><b>Kiosk Radio, Brussels</b><span>Live broadcasts from the kiosk in Brussels park, multiple sessions</span></span></div>
-      <div class="hitem"><span class="d">21 Sep</span><span class="v"><b>Jam Radio</b><span>Liveset broadcast</span></span></div>
-      <div class="hitem"><span class="d">2026</span><span class="v"><b>Self-released run</b><span>Amour Seum, Cataclysme 2.0, Automatic Sex</span></span></div>
-      <div class="hitem"><span class="d">2024–26</span><span class="v"><b>Club, open-air and private dates</b><span>Belgium and beyond: festival floors, club rooms, beach and desert parties</span></span></div>
-      <div class="hitem"><span class="d">—</span><span class="v"><b>Monkey Parade Records</b><span>Gemmayzeh (Lui &amp; M.O.S remix), for Attari</span></span></div>
-      <p class="note">Full date list with venues available from management on request.</p>
-    </div>
-    <div>
-      <p class="kicker">Where to find him</p>
-      <h2>Channels<em>.</em></h2>
-      <ul class="tech">
-        <li><b>SoundCloud</b><br><a href="https://soundcloud.com/moskitoss" data-event="soundcloud_click">soundcloud.com/moskitoss</a>, tracks, remixes and sets</li>
-        <li><b>Instagram</b><br><a href="https://www.instagram.com/m.o.s_music/" data-event="instagram_click">@m.o.s_music</a></li>
-        <li><b>Facebook</b><br><a href="https://www.facebook.com/MOSMUZIK" data-event="facebook_click">facebook.com/MOSMUZIK</a></li>
-        <li><b>YouTube</b><br><a href="https://youtu.be/ggF-aYwcUM4" data-event="youtube_click">Kiosk Radio set</a></li>
-        <li><b>Website</b><br><a href="https://mosmusic.be">mosmusic.be</a></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<div class="contact" id="contact">
-  <div class="wrap">
-    <p class="kicker" style="color:inherit;opacity:.7">Management replies within 48 hours</p>
-    <h2>Bookings <em>&amp; press</em></h2>
-    <a class="mail" href="mailto:booking.mosmusic@gmail.com" data-event="booking_email_click">booking.mosmusic@gmail.com</a>
-    <div class="links">
-      <a href="https://soundcloud.com/moskitoss" data-event="soundcloud_click">SoundCloud</a>
-      <a href="https://www.instagram.com/m.o.s_music/" data-event="instagram_click">Instagram</a>
-      <a href="https://www.facebook.com/MOSMUZIK" data-event="facebook_click">Facebook</a>
-      <a href="https://mosmusic.be">mosmusic.be</a>
-    </div>
-    <p class="small">M.O.S is developed with FLAVLAB SIGNAL. This page prints cleanly: use "Save as PDF" to generate the document version of this kit.</p>
-  </div>
-</div>
-
+</main>
 <footer>
-  <span>M.O.S, Brussels — electronic press kit</span>
-  <span class="no-print"><a href="index.html">Back to the site</a></span>
+  <div class="wrap foot-row">
+    <span>M.O.S, Brussels. Developed with FLAVLAB SIGNAL.</span>
+    <span><a href="index.html">mosmusic.be</a>&nbsp;&nbsp;<a href="mailto:booking.mosmusic@gmail.com">booking.mosmusic@gmail.com</a></span>
+  </div>
 </footer>
-
 <script defer src="/_vercel/insights/script.js"></script>
 <script>
 (function(){
   'use strict';
   function track(name){
-    try{
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({event:name});
-      if (window.va) window.va('event',{name:name});
-    }catch(e){}
+    try{ window.dataLayer=window.dataLayer||[]; window.dataLayer.push({event:name}); if(window.va) window.va('event',{name:name}); }catch(e){}
   }
   document.addEventListener('click', function(e){
     var el = e.target.closest('[data-event]');
     if (el) track(el.getAttribute('data-event'));
   });
-  document.querySelectorAll('.copybtn').forEach(function(b){
-    b.addEventListener('click', function(){
-      var src = document.getElementById(b.getAttribute('data-copy'));
-      var text = src ? src.innerText.trim() : '';
-      function done(ok){ var t=b.textContent; b.textContent = ok ? 'Copied' : 'Select and copy manually'; setTimeout(function(){ b.textContent=t; }, 1800); }
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(function(){done(true)},function(){done(false)});
-      } else { done(false); }
+  document.querySelectorAll('.copybtn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var base = btn.getAttribute('data-copy');
+      var txt = document.getElementById(base+'-short').innerText + '\n\n' + document.getElementById(base+'-full').innerText;
+      navigator.clipboard.writeText(txt).then(function(){
+        var old = btn.textContent; btn.textContent = 'Copied ✓';
+        setTimeout(function(){ btn.textContent = old; }, 1600);
+      });
     });
   });
 })();
