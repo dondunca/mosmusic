@@ -65,6 +65,8 @@ header.mast{border-bottom:2px solid var(--ink);position:sticky;top:0;background:
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero{padding:44px 0 56px}.stamp{left:auto;right:10px}}
 /* credits band */
 .band{background:var(--ink);color:var(--paper);padding:34px 0 38px;overflow:hidden}
+.band.slim{padding:12px 0}
+.band.slim .m1{font-size:clamp(1.3rem,2.6vw,2rem)}
 .band .lbl{padding:0 24px;max-width:1280px;margin:0 auto 16px;font-size:.78rem;letter-spacing:.3em;color:#9B9388;text-transform:uppercase}
 .band .lbl i{font-style:normal;color:var(--pink)}
 .marq{overflow:hidden;white-space:nowrap}
@@ -176,6 +178,10 @@ footer{border-top:2px solid var(--ink);padding:40px 0 100px;overflow:hidden;posi
 </header>
 <main id="main">
 
+<div class="band slim" aria-hidden="true">
+  <div class="marq"><div class="marq-track m1">VOODOO VILLAGE <i>★</i> NO MAN'S WORLD <i>★</i> HANGAR <i>★</i> KIOSK RADIO <i>★</i> JEUX D'HIVER <i>★</i> VOODOO VILLAGE <i>★</i> NO MAN'S WORLD <i>★</i> HANGAR <i>★</i> KIOSK RADIO <i>★</i> JEUX D'HIVER <i>★</i> </div></div>
+</div>
+
 <section class="hero">
   <div class="wrap">
     <div class="hero-grid">
@@ -202,7 +208,6 @@ footer{border-top:2px solid var(--ink);padding:40px 0 100px;overflow:hidden;posi
 
 <div class="band" role="region" aria-label="Selected dates">
   <p class="lbl">As seen after dark <i>///</i> selected dates</p>
-  <div class="marq" aria-hidden="true"><div class="marq-track m1">VOODOO VILLAGE <i>★</i> NO MAN'S WORLD <i>★</i> HANGAR <i>★</i> KIOSK RADIO <i>★</i> JEUX D'HIVER <i>★</i> VOODOO VILLAGE <i>★</i> NO MAN'S WORLD <i>★</i> HANGAR <i>★</i> KIOSK RADIO <i>★</i> JEUX D'HIVER <i>★</i> </div></div>
   <div class="marq" aria-hidden="true"><div class="marq-track m2">FONDATION BOGHOSSIAN <i>///</i> THE EGG <i>///</i> MAISON DE LA POSTE <i>///</i> MUNICH <i>///</i> LOS ANGELES <i>///</i> JAM RADIO <i>///</i> FONDATION BOGHOSSIAN <i>///</i> THE EGG <i>///</i> MAISON DE LA POSTE <i>///</i> MUNICH <i>///</i> LOS ANGELES <i>///</i> JAM RADIO <i>///</i> </div></div>
   <p class="with">Festival bills shared with <b>Adriatique, WhoMadeWho, Paula Temple, NTO, Nicole Moudaber, Mind Against and Marc Romboy</b>. Full list in the <a href="epk.html" style="color:var(--paper)" data-event="nav_epk">press kit</a>.</p>
 </div>
