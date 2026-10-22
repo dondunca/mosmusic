@@ -118,6 +118,20 @@ h2.sec em{font-style:normal;color:var(--pink)}
 .air-row .tt{font-family:'Anton',sans-serif;font-size:clamp(1.2rem,3vw,1.9rem);text-transform:uppercase}
 .air-row:hover .tt,.air-row:focus-visible .tt{color:var(--pink)}
 .air-row .ts{margin-left:auto;color:#9B9388;font-size:.88rem;text-align:right}
+/* shared stages */
+.stages .names{max-width:60rem;line-height:1.35;margin-top:10px}
+.name{font-family:'Instrument Serif',serif;display:inline-block;margin:0 .35em .1em 0;cursor:default;transition:color .25s;position:relative;animation:bob 6s ease-in-out infinite}
+.name:nth-child(3n){animation-delay:-2s}.name:nth-child(3n+1){animation-delay:-4s}.name:nth-child(2n){animation-duration:7.5s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media (prefers-reduced-motion:reduce){.name{animation:none}}
+.name.s1{font-size:clamp(2.2rem,5vw,4rem)}
+.name.s2{font-size:clamp(1.8rem,4vw,3.2rem);font-style:italic}
+.name.s3{font-size:clamp(1.5rem,3.2vw,2.5rem)}
+.name .tag{font-family:'Familjen Grotesk',sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);display:inline-block;max-width:0;overflow:hidden;white-space:nowrap;vertical-align:middle;transition:max-width .4s ease,margin .4s ease;margin-left:0}
+.name:hover,.name:focus-visible{color:var(--pink);outline:none}
+.name:hover .tag,.name:focus-visible .tag{max-width:16rem;margin-left:.5em}
+.name .amp{color:var(--pink)}
+.stages .hint{margin-top:26px;color:var(--smoke);font-size:.9rem}
 /* about */
 .about-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:start}
 .about p{max-width:36rem;margin-bottom:16px}
@@ -179,7 +193,7 @@ footer{border-top:2px solid var(--ink);padding:40px 0 100px;overflow:hidden;posi
 <main id="main">
 
 <div class="band slim" aria-hidden="true">
-  <div class="marq"><div class="marq-track m1">VOODOO VILLAGE <i>★</i> NO MAN'S WORLD <i>★</i> HANGAR <i>★</i> KIOSK RADIO <i>★</i> JEUX D'HIVER <i>★</i> VOODOO VILLAGE <i>★</i> NO MAN'S WORLD <i>★</i> HANGAR <i>★</i> KIOSK RADIO <i>★</i> JEUX D'HIVER <i>★</i> </div></div>
+  <div class="marq"><div class="marq-track m1">VOODOO VILLAGE <i>★</i> NO MAN'S WORLD <i>★</i> HANGAR <i>★</i> KIOSK RADIO <i>★</i> JEUX D'HIVER <i>★</i> FONDATION BOGHOSSIAN <i>★</i> VOODOO VILLAGE <i>★</i> NO MAN'S WORLD <i>★</i> HANGAR <i>★</i> KIOSK RADIO <i>★</i> JEUX D'HIVER <i>★</i> FONDATION BOGHOSSIAN <i>★</i> VOODOO VILLAGE <i>★</i> NO MAN'S WORLD <i>★</i> HANGAR <i>★</i> KIOSK RADIO <i>★</i> JEUX D'HIVER <i>★</i> FONDATION BOGHOSSIAN <i>★</i> VOODOO VILLAGE <i>★</i> NO MAN'S WORLD <i>★</i> HANGAR <i>★</i> KIOSK RADIO <i>★</i> JEUX D'HIVER <i>★</i> FONDATION BOGHOSSIAN <i>★</i> </div></div>
 </div>
 
 <section class="hero">
@@ -208,7 +222,7 @@ footer{border-top:2px solid var(--ink);padding:40px 0 100px;overflow:hidden;posi
 
 <div class="band" role="region" aria-label="Selected dates">
   <p class="lbl">As seen after dark <i>///</i> selected dates</p>
-  <div class="marq" aria-hidden="true"><div class="marq-track m2">FONDATION BOGHOSSIAN <i>///</i> THE EGG <i>///</i> MAISON DE LA POSTE <i>///</i> MUNICH <i>///</i> LOS ANGELES <i>///</i> JAM RADIO <i>///</i> FONDATION BOGHOSSIAN <i>///</i> THE EGG <i>///</i> MAISON DE LA POSTE <i>///</i> MUNICH <i>///</i> LOS ANGELES <i>///</i> JAM RADIO <i>///</i> </div></div>
+  <div class="marq" aria-hidden="true"><div class="marq-track m2">THE EGG <i>///</i> MAISON DE LA POSTE <i>///</i> RESET <i>///</i> LOST GARDENS <i>///</i> TOFU&amp;ACID MUNICH <i>///</i> LOS ANGELES <i>///</i> JAM RADIO <i>///</i> THE EGG <i>///</i> MAISON DE LA POSTE <i>///</i> RESET <i>///</i> LOST GARDENS <i>///</i> TOFU&amp;ACID MUNICH <i>///</i> LOS ANGELES <i>///</i> JAM RADIO <i>///</i> THE EGG <i>///</i> MAISON DE LA POSTE <i>///</i> RESET <i>///</i> LOST GARDENS <i>///</i> TOFU&amp;ACID MUNICH <i>///</i> LOS ANGELES <i>///</i> JAM RADIO <i>///</i> THE EGG <i>///</i> MAISON DE LA POSTE <i>///</i> RESET <i>///</i> LOST GARDENS <i>///</i> TOFU&amp;ACID MUNICH <i>///</i> LOS ANGELES <i>///</i> JAM RADIO <i>///</i> </div></div>
   <p class="with">Festival bills shared with <b>Adriatique, WhoMadeWho, Paula Temple, NTO, Nicole Moudaber, Mind Against and Marc Romboy</b>. Full list in the <a href="epk.html" style="color:var(--paper)" data-event="nav_epk">press kit</a>.</p>
 </div>
 
@@ -322,6 +336,28 @@ footer{border-top:2px solid var(--ink);padding:40px 0 100px;overflow:hidden;posi
       <a class="air-row" href="https://youtu.be/ggF-aYwcUM4" data-event="kiosk_video_click"><span class="tt">Kiosk Radio, Bruxelles</span><span class="ts">Broadcast sessions, latest 02/26 · watch →</span></a>
       <div class="air-row"><span class="tt">Jam Radio</span><span class="ts">Liveset, Brussels</span></div>
     </div>
+  </div>
+</section>
+
+<section id="stages" class="stages">
+  <div class="wrap">
+    <p class="kicker">Same festivals, same weekends</p>
+    <h2 class="sec">Bills shared with<em>.</em></h2>
+    <p class="sec-note">Names from the official Voodoo Village and No Man's World posters M.O.S played on. Touch a name for the where.</p>
+    <p class="names">
+      <span class="name s1" tabindex="0">Adriatique<span class="tag">Voodoo Village '23</span></span>
+      <span class="name s2" tabindex="0">WhoMadeWho<span class="tag">Voodoo Village '23</span></span>
+      <span class="name s3" tabindex="0">Paula Temple<span class="tag">Voodoo Village '23</span></span>
+      <span class="name s2" tabindex="0">NTO<span class="tag">Voodoo Village '23</span></span>
+      <span class="name s1" tabindex="0">Nicole Moudaber<span class="tag">Voodoo Village '24</span></span>
+      <span class="name s3" tabindex="0">John Noseda<span class="tag">Voodoo Village '23</span></span>
+      <span class="name s2" tabindex="0">Mind Against<span class="tag">Voodoo Village '24</span></span>
+      <span class="name s3" tabindex="0">Kevin de Vries<span class="tag">Voodoo Village '24</span></span>
+      <span class="name s2" tabindex="0">Rhadoo<span class="tag">Voodoo Village '24</span></span>
+      <span class="name s1" tabindex="0">Marc Romboy<span class="tag">No Man's World</span></span>
+      <span class="name s3" tabindex="0">Jonathan Kaspar<span class="tag">No Man's World</span></span>
+    </p>
+    <p class="hint script" style="font-size:1.5rem;transform:rotate(-1.5deg)">bonne compagnie, non ?</p>
   </div>
 </section>
 
